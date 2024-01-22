@@ -11,6 +11,11 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/ea0f44373f.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Google font's -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +30,10 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "btn-orange": "#FF4240",
+              "text-sm": "#424247",
+              "text-xl": "#131318",
+              "text-rgba": "rgba(255, 255, 255, 0.60)",
             },
           },
         },
@@ -38,7 +47,7 @@
     </style>
   </head>
   <body class="manrope-font">
-    <header class="container mx-auto">
+    <header class="container mx-auto mt-12">
       <nav>
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -63,36 +72,34 @@
                 tabindex="0"
                 class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
-                <li><a>Item 1</a></li>
-                <li>
-                  <a>Parent</a>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Item 3</a></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">About </a></li>
+                <li><a href="">Pages </a></li>
+                <li><a href="">Blog </a></li>
+                <li><a href="">Contact</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-xl">daisyUI</a>
+            <a class="btn btn-ghost text-2xl gap-0 lg:text-4xl font-extrabold"
+              >Hockey<span class="text-btn-orange">’</span>s</a
+            >
           </div>
           <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
-              <li><a>Item 1</a></li>
-              <li>
-                <details>
-                  <summary>Parent</summary>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </details>
-              </li>
-              <li><a>Item 3</a></li>
+              <li class="text-btn-orange font-bold"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
             </ul>
           </div>
           <div class="navbar-end">
-            <a class="btn">Button</a>
+            <a class="cursor-pointer hidden lg:block mr-8"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+            <a
+              class="btn bg-btn-orange text-white hover:bg-white hover:border-btn-orange hover:text-btn-orange font-semibold lg:font-bold text-lg lg:text-xl"
+              >Get Ticket</a
+            >
           </div>
         </div>
       </nav>
