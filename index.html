@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,10 +30,14 @@
           extend: {
             colors: {
               clifford: "#da373d",
-              "btn-orange": "#FF4240",
-              "text-sm": "#424247",
-              "text-xl": "#131318",
-              "text-rgba": "rgba(255, 255, 255, 0.60)",
+              "btn-orange": '#FF4240',
+                        "text-sm": '#424247',
+                        "text-xl": '#131318',
+                        "text-rgba": 'rgba(255, 255, 255, 0.60)',
+                        "rgba": 'rgba(19, 19, 24, 0.60)',
+                        "rgb": 'rgba(19, 19, 24, 0.50)',
+                        "border": 'rgba(19, 19, 24, 0.10)',
+                        "bg": 'rgba(19, 19, 24, 0.03)',
             },
           },
         },
@@ -252,5 +256,52 @@
         </div>
       </section>
     </header>
+    <!-- Main Section -->
+    <main class="container mx-auto mt-24">
+      <!-- Pro Club Section Start-->
+      <section class="mb-20">
+        <hr class="border border-dashed bg-gray-500 opacity-10 mb-8">
+        <div class="container mx-auto text-center space-y-4">
+            <h3 class="text-xl lg:text-3xl font-extrabold text-text-xl">Professional Hockeys Club</h3>
+            <p class="font-medium text-rgba text-sm lg:text-base">A premier professional hockey club, renowned for excellence in performance, <br>led by seasoned coaches, and equipped with cutting-edge facilities for skill development and success on the global stage.</p>
+        </div>
+        <hr class="border border-dashed bg-gray-500 opacity-10 mt-8">
+        <!-- Dynamic Progress Section -->
+        <div class="container mx-auto flex flex-wrap lg:flex-nowrap justify-evenly mt-12 gap-8 ">
+            <div class="text-center space-y-4">
+                <div class="radial-progress mb-5 text-[#FF4240]" style="--value:87;" role="progressbar">
+                    <p class="text-text-xl text-xl font-extrabold">87%</p>
+                </div>
+                <h2 class="text-xl font-semibold">Player Facility</h2>
+                <p class="text-rgba">Cutting-edge player facility elevating hockey performance excellence.
+                </p>
+            </div>
+            <div class="text-center space-y-4">
+                <div class="radial-progress mb-5 text-[#49D293]" style="--value:95;" role="progressbar">
+                    <p class="text-text-xl text-xl font-extrabold">95%</p>
+                </div>
+                <h2 class="text-xl font-semibold">Experienced Coach</h2>
+                <p class="text-rgba">Highly skilled veteran coach orchestrating sustained hockey success.
+                </p>
+            </div>
+            <div class="text-center space-y-4">
+                <div class="radial-progress mb-5 text-[#FFB546]" style="--value:90;" role="progressbar">
+                    <p class="text-text-xl text-xl font-extrabold">90%</p>
+                </div>
+                <h2 class="text-xl font-semibold">Senior Player</h2>
+                <p class="text-rgba">Senior player exemplifying seasoned leadership and expertise.
+                </p>
+            </div>
+            <div class="text-center space-y-4">
+                <div class="radial-progress mb-5 text-[#4C8DF1]" style="--value:80;" role="progressbar">
+                    <p class="text-text-xl text-xl font-extrabold">80%</p>
+                </div>
+                <h2 class="text-xl font-semibold">Training Ground</h2>
+                <p class="text-rgba">Premier training ground fostering skill development mastery.
+                </p>
+            </div>
+        </div>
+    </section>
+    </main>
   </body>
 </html>
